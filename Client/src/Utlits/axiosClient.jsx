@@ -5,7 +5,7 @@ import {
   removeItem,
   setItem,
 } from "./localStorageManager.jsx";
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 import Store from "../Component/Redux/Store.jsx";
 import {
   setLoading,
