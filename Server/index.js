@@ -25,8 +25,8 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3001",
-  })
+    origin: "https://socail-media-jet.vercel.app",
+  }),
 );
 
 app.use("/auth", authRouter);
