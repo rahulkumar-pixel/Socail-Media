@@ -25,10 +25,9 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "https://socail-media-jet.vercel.app",
+    origin: "https://socail-media-jet.vercel.app/",
   }),
 );
-
 app.use("/auth", authRouter);
 app.use("/post", postRouter);
 app.use("/user", userRouter);

@@ -24,6 +24,7 @@ function Login() {
         },
         { headers: { "Content-Type": "application/json" } }
       );
+      
       setItem(KEY_ACCESS_TOKEN, response.result.accessToken);
       navigate("/");
     } catch (error) {

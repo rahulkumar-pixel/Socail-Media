@@ -10,10 +10,11 @@ function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const nagivate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const nagivate = useNavigate()
+    
      await axiosClient.post(
       "/auth/signUp",
       {
